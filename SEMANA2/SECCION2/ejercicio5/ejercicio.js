@@ -1,6 +1,4 @@
-const n = parseInt(prompt("Ingresa un número: "));
-let i = 1;
-while (i <= n) {
+let numero = parseInt(prompt("Ingresa un número"));
+for (let i = 1; i <= numero; i++) {
   console.log(i);
-  i++;
 }

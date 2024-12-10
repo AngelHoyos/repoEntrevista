@@ -1,7 +1,7 @@
-const numeroParImpar = parseInt(prompt("Ingresa un número: "));
+const numero = parseInt(prompt("Ingresa un número: "));
 
-if (numeroParImpar % 2 === 0) {
-  console.log(`${numeroParImpar} es par.`);
+if (numero % 2 === 0) {
+  console.log(`${numero} es par`);
 } else {
-  console.log(`${numeroParImpar} es impar.`);
+  console.log(`${numero} es impar`);
 }

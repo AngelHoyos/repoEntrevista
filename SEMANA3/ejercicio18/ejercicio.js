@@ -1,12 +1,19 @@
 function contarBasesADN(cadena) {
-    const bases = { A: 0, C: 0, G: 0, T: 0 };
-    for (let base of cadena) {
-        if (bases.hasOwnProperty(base)) {
-            bases[base]++;
+    let contador = {
+        A: 0,
+        C: 0,
+        G: 0,
+        T: 0
+    };
+
+    for (let i = 0; i < cadena.length; i++) {
+        let base = cadena[i].toUpperCase();  // Aseguramos que la letra sea mayúscula
+        if (contador.hasOwnProperty(base)) {
+            contador[base]++;
         }
     }
-    return `Cantidad de A: ${bases.A}, Cantidad de C: ${bases.C}, Cantidad de G: ${bases.G}, Cantidad de T: ${bases.T}`;
+
+    return `Cantidad de A: ${contador.A}, Cantidad de C: ${contador.C}, Cantidad de G: ${contador.G}, Cantidad de T: ${contador.T}`;
 }
 
-
-console.log('la cadena es: ATGCGA, la cantidad de la base del ADN es: ', contarBasesADN('ATGCGA')); // Cantidad de A: 2, Cantidad de C: 1, Cantidad de G: 2, Cantidad de T: 1
+console.log(contarBasesADN("AACAGT"));

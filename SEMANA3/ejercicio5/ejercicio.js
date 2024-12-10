@@ -1,11 +1,17 @@
-function factorial(n) {
-    if (n === 0 || n === 1) return 1;
-    let resultado = 1;
-    for (let i = 2; i <= n; i++) {
-        resultado *= i;
+function calcularFactorial(numero) {
+    if (numero === 0 || numero === 1) {
+        return 1;
     }
-    return resultado;
+    
+    let total = 1;
+    let i = 2;
+    
+    while (i <= numero) {
+        total *= i;
+        i++;
+    }
+    
+    return total;
 }
 
-
-console.log('el factorial de 5 es:', factorial(5));
+console.log('El factorial de 10 es:', calcularFactorial(10));

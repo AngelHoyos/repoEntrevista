@@ -1,14 +1,24 @@
-const calcularPromedio = (notas) => notas.reduce((acc, nota) => acc + nota, 0) / notas.length;
-const esAprobado = (promedio) => promedio >= 6;
-
-function mostrarResultado(notas) {
-    const promedio = calcularPromedio(notas); // Calcula el promedio usando calcularPromedio
-    const aprobado = esAprobado(promedio); // Determina si aprueba usando esAprobado
-    console.log(aprobado ? "Aprobado" : "Reprobado");
+function calcularPromedio(notas) {
+    let suma = 0;
+    for (let i = 0; i < notas.length; i++) {
+        suma += notas[i];
+    }
+    return suma / notas.length;
 }
 
-console.log('El estudiante ', mostrarResultado([7, 5, 8]));// Salida: "Aprobado"
-console.log('El estudiante ', mostrarResultado([4, 5, 6]));// Salida: "Reprobado"
-console.log('El estudiante ', mostrarResultado([6, 7, 8]));// Salida: "Aprobado"
+function esAprobado(promedio) {
+    return promedio >= 6;
+}
 
+function mostrarResultado(aprobado) {
+    if (aprobado) {
+        console.log("El estudiante ha aprobado.");
+    } else {
+        console.log("El estudiante ha reprobado.");
+    }
+}
 
+let notas = [7, 6, 5];
+let promedio = calcularPromedio(notas);
+let aprobado = esAprobado(promedio);
+mostrarResultado(aprobado);

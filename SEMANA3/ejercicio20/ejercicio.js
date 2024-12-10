@@ -1,5 +1,13 @@
-const calacularAreaRectangulo = (base, altura) => base * altura;
-const calcularPerimetroRectangulo = (base, altura) => 2 * (base + altura);
+function calcularArea(largo, ancho) {
+    return largo * ancho;
+}
 
-console.log('El área del rectángulo es:', calacularAreaRectangulo(5, 3));
-console.log('El perímetro del rectángulo es:', calcularPerimetroRectangulo(5, 3));
+function calcularPerimetro(largo, ancho) {
+    return 2 * (largo + ancho);
+}
+
+let largo = 5;
+let ancho = 3;
+
+console.log(`El área del rectángulo es: ${calcularArea(largo, ancho)} unidades cuadradas.`);
+console.log(`El perímetro del rectángulo es: ${calcularPerimetro(largo, ancho)} unidades.`);

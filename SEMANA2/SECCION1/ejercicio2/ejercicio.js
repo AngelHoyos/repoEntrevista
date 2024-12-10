@@ -1,16 +1,9 @@
-const productoSwitch = prompt(
-  "Ingresa el nombre del producto (lentejas, crema, arroz, vino): "
-).toLowerCase();
+let productos = prompt("Ingresa el nombre del producto (lentejas, crema, arroz, vino)").toLowerCase();
 
-switch (productoSwitch) {
-  case "lentejas":
-  case "arroz":
-    console.log(`${productoSwitch} no paga IVA.`);
-    break;
-  case "vino":
-  case "crema":
-    console.log(`${productoSwitch} paga IVA.`);
-    break;
-  default:
-    console.log("Producto no válido.");
+if (productos === "lentejas" || productos === "arroz") {
+  console.log(`${productos} no paga IVA.`);
+} else if (productos === "vino" || productos === "crema") {
+  console.log(`${productos} paga IVA.`);
+} else {
+  console.log("Producto no válido.");
 }

@@ -1,5 +1,15 @@
-const celsiusToFahrenheit = (celsius) => celsius * 9 / 5 + 32;
-const fahrenheitToCelsius = (fahrenheit) => (fahrenheit - 32) * 5 / 9;
+function celsiusToFahrenheit(celsius) {
+    return (celsius * 9/5) + 32;
+}
 
-console.log('100°C en Fahrenheit:', celsiusToFahrenheit(100));
-console.log('212°F en Celsius:', fahrenheitToCelsius(212));
+function fahrenheitToCelsius(fahrenheit) {
+    return (fahrenheit - 32) * 5/9;
+}
+
+let celsius = 25;
+let fahrenheit = celsiusToFahrenheit(celsius);
+console.log(`${celsius}°C es igual a ${fahrenheit}°F`);
+
+fahrenheit = 77;
+celsius = fahrenheitToCelsius(fahrenheit);
+console.log(`${fahrenheit}°F es igual a ${celsius}°C`);

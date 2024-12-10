@@ -1,12 +1,20 @@
-function generarContraseña(n) {
-    const caracteres = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*";
-    let contraseña = "";
-    for (let i = 0; i < n; i++) {
-        const randomIndex = Math.floor(Math.random() * caracteres.length);
-        contraseña += caracteres[randomIndex];
+function generarContraseña() {
+    let longitud = parseInt(prompt("¿Cuántos caracteres debe tener la generarContraseña?"));
+    
+    if (isNaN(longitud) || longitud <= 0) {
+        console.log("Por favor, ingresa un número válido mayor a 0.");
+        return;
     }
-    return contraseña;
+
+    let caracteres = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*";
+    let generarContraseña = "";
+    
+    for (let i = 0; i < longitud; i++) {
+        let randomIndex = Math.floor(Math.random() * caracteres.length);
+        generarContraseña += caracteres[randomIndex];
+    }
+
+    console.log('La generarContraseña generada es:', generarContraseña);
 }
 
-
-console.log('la contraseña generada es:', generarContraseña(10));
+generarContraseña();

@@ -1,5 +1,7 @@
-const obtenerPrimeraLetraNombre = (nombre) => nombre.charAt(0);
-
-console.log('la primera letra del nombre "Juan" es:', obtenerPrimeraLetraNombre('Juan'));
-
-
+function Letra(nombre) {
+    return nombre[0];
+  }
+  
+  const nombre = "Angel";
+  console.log(`La primera letra del nombre "${nombre}" es `+ Letra(nombre));
+  

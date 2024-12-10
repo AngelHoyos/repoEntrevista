@@ -1,2 +1,6 @@
-const calcularArea = (base, altura) => base * altura;
-console.log('el aredel triangulo es:', calcularArea(5, 3));
+function Area(base, altura) {
+    return base * altura;
+  }
+  
+  console.log('El area del triángulo es', Area(8, 2));
+  

@@ -1,5 +1,12 @@
-const esVocal = (letra) => ['a', 'e', 'i', 'o', 'u'].includes(letra.toLowerCase()) ? 'es vocal' : 'no es vocal';    
-
-console.log('la letra "a" es vocal:', esVocal('a'))
-console.log('la letra "b" es vocal:', esVocal('b'));
-
+function esVocal(letra) {
+    let vocal = ['a', 'e', 'i', 'o', 'u'];
+    if (vocal.includes(letra.toLowerCase())) {
+      return 'es vocal';
+    } else {
+      return 'no es vocal';
+    }
+  }
+  
+  console.log('La letra "m" no es vocal', esVocal('m'));
+  console.log('La letra "i" es vocal', esVocal('i'));
+  

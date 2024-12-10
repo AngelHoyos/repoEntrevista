@@ -1,19 +1,11 @@
-const numeroPrimo = parseInt(prompt("Ingresa un número entre 1 y 15: "));
-let esPrimo = true;
+let numero = parseInt(prompt("Ingresa un número entre 1 y 15"));
 
-if (numeroPrimo < 2) {
-  esPrimo = false;
+if (numero < 2) {
+  console.log(`${numero} no es primo`);
+} else if (numero === 2 || numero === 3) {
+  console.log(`${numero} es primo`);
+} else if (numero % 2 === 0 ||  numero % 3 === 0 ||  numero % 5 === 0 ||  numero % 7 === 0) {
+  console.log(`${numero} no es primo`);
 } else {
-  for (let i = 2; i <= Math.sqrt(numeroPrimo); i++) {
-    if (numeroPrimo % i === 0) {
-      esPrimo = false;
-      break;
-    }
-  }
-}
-
-if (esPrimo) {
-  console.log(`${numeroPrimo} es primo.`);
-} else {
-  console.log(`${numeroPrimo} no es primo.`);
+  console.log(`${numero} es primo`);
 }

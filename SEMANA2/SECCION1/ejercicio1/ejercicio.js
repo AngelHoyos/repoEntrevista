@@ -1,6 +1,6 @@
-const edad = parseInt(prompt("Ingresa tu edad: "));
+let edad = parseInt(prompt("Ingresa tu edad"));
 if (edad >= 18) {
-  console.log("Eres mayor de edad.");
+  console.log("Es mayor de edad");
 } else {
-  console.log("Eres menor de edad.");
+  console.log("Es menor de edad");
 }

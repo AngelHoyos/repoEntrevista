@@ -1,10 +1,10 @@
-const num1 = parseInt(prompt("Ingresa el primer número: "));
-const num2 = parseInt(prompt("Ingresa el segundo número: "));
+let numero1 = parseInt(prompt("Ingresa el primer número"));
+let numero2 = parseInt(prompt("Ingresa el segundo número"));
 
-if (num1 > num2) {
-  console.log(`${num1} es mayor que ${num2}.`);
-} else if (num2 > num1) {
-  console.log(`${num2} es mayor que ${num1}.`);
+if (numero1 > numero2) {
+  console.log(`${numero1} es mayor que ${numero2}`);
+} else if (numero2 > numero1) {
+  console.log(`${numero2} es mayor que ${numero1}`);
 } else {
-  console.log("Ambos números son iguales.");
+  console.log("Ambos números son iguales");
 }

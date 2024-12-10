@@ -1,7 +1,7 @@
-function mostrarNumeros(n) {
-    for (let i = 1; i <= n; i++) {
+function mostrarNumeros(a) {
+    for (let i = 1; i <= a; i++) {
         console.log(i);
     }
 }
 
-mostrarNumeros(10);
+mostrarNumeros(19);

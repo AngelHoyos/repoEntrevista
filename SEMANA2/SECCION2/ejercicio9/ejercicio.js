@@ -1,10 +1,9 @@
-let salir = false;
-while (!salir) {
-  const respuesta = prompt("¿Deseas salir? (S/N): ").toUpperCase();
+let respuesta;
+do {
+  respuesta = prompt("Desea salir? (S/N) ").toUpperCase();
   if (respuesta === "S") {
-    console.log("¡Adiós!");
-    salir = true;
+    console.log("Adios!");
   } else {
-    console.log("El programa continuará...");
+    console.log("El programa continua");
   }
-}
+} while (respuesta !== "S");

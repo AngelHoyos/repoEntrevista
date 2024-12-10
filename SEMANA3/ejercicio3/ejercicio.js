@@ -1,3 +1,6 @@
-const saludar = (nombre) => `Hola ${nombre}!`;
-
-console.log(saludar('Juan Pablo'));
+function saludar(nombre) {
+    return `Hola ${nombre}`;
+  }
+  
+  console.log(saludar('Angel'));
+  

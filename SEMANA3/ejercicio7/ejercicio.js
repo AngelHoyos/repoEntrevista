@@ -1,3 +1,7 @@
-const convertirMayusculas = (cadena) => cadena.toUpperCase();
-
-console.log(convertirMayusculas("hola mundo")); // "HOLA MUNDO");
+function convertir(cadena) {
+    return cadena.toUpperCase();
+  }
+  
+  const texto = "hola a todos";
+  console.log(convertir(texto)); 
+  

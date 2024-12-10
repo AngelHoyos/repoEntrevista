@@ -1,3 +1,8 @@
-const numeroAleatorio = () => Math.floor(Math.random() * 20) + 1;
-
-console.log('El numero aleatorio entre 1 y 20 es: ',numeroAleatorio());
+function generarNumeroAleatorio() {
+    let numero = Math.floor(Math.random() * 20) + 1;
+    return numero;
+  }
+  
+  let numero = generarNumeroAleatorio();
+  console.log('El número aleatorio entre 1 y 20 ', numero);
+  
