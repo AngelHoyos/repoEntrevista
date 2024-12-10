@@ -1,7 +1,5 @@
-function recorrerYMostrar() {
-  let array = [2, 5, 7, 9];
-  array.forEach((element) => {
-    console.log(element);
-  });
+function imprimirElementos(arr) {
+  arr.forEach(element => console.log(element));
 }
-recorrerYMostrar();
+
+imprimirElementos([2, 5, 7, 9]); 

@@ -1,13 +1,8 @@
-function imprimeMensajeConRetraso(mensaje, callback) {
+function imprimirMensaje() {
   setTimeout(() => {
-    callback(mensaje);
+    console.log("Mensaje después de 2 segundos");
   }, 2000);
 }
 
-const mensaje = (mensaje) => {
-  console.log(mensaje);
-};
-
-console.log("Inicio del proceso");
-imprimeMensajeConRetraso("Hola Mundo", mensaje);
-console.log("Fin del proceso");
+// Prueba
+imprimirMensaje(); // Imprime "Mensaje después de 2 segundos" después de 2 segundos

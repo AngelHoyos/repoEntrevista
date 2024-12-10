@@ -1,5 +1,5 @@
-function contarElementos() {
-  let arr9 = [1, 2, 3, 4, 5];
-  console.log(arr9.length);
+function contarElementos(arr) {
+  return arr.length;
 }
-contarElementos();
+
+console.log(contarElementos([2, 5, 7, 9])); 

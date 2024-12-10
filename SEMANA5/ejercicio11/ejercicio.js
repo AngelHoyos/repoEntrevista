@@ -1,8 +1,9 @@
-// Ejercicio 11
-const continentes = {
-  Europa: ["España", "Francia", "Italia", "Alemania", "Grecia"],
-  Asia: ["China", "Japón", "India", "Corea del Sur", "Tailandia"],
-  América: ["EE.UU.", "Canadá", "México", "Argentina", "Brasil"],
+let continentes = {
+  Asia: ["China", "India", "Japón", "Corea del Sur", "Indonesia"],
+  Europa: ["España", "Francia", "Italia", "Alemania", "Reino Unido"],
+  América: ["Argentina", "Brasil", "Canadá", "México", "Chile"],
+  África: ["Nigeria", "Sudáfrica", "Egipto", "Kenia", "Uganda"],
+  Oceanía: ["Australia", "Nueva Zelanda", "Fiji", "Papúa Nueva Guinea", "Samoa"]
 };
-const continente = prompt("Ingrese el nombre de un continente:");
-console.log(continentes[continente] || "Continente no disponible");
+let continente = prompt("Ingrese un continente:");
+alert(`Países de ${continente}: ${continentes[continente].join(", ")}`);

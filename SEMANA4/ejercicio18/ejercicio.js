@@ -1,11 +1,10 @@
-function contarMaria() {
-  let nombres18 = ["Maria", "Pedro", "Juan", "Pablo", "Diana", "Maria"];
-  let contador18 = 0;
+let nombres = ["Maria", "Pedro", "Juan", "Pablo", "Diana", "Maria"];
+let contador = 0;
 
-  nombres18.forEach((nombre) => {
-    if (nombre === "Maria") contador18++;
-  });
+nombres.forEach(nombre => {
+  if (nombre === "Maria") {
+    contador++;
+  }
+});
 
-  console.log("Cantidad de 'Maria':", contador18);
-}
-contarMaria();
+console.log(contador); // Muestra cuántas veces aparece "Maria"

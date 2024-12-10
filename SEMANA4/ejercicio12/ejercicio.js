@@ -1,20 +1,24 @@
-function ordenarFrutasVerduras() {
-  let arreglo1 = ["Pera", "Cebolla", "Limón", "Pimentón"];
-  let arreglo2 = ["Manzana", "Banano", "Lechuga", "Perejíl"];
-  let frutas = [];
-  let verduras = [];
+let arreglo1 = ["Pera", "Cebolla", "Limón", "Pimentón"];
+let arreglo2 = ["Manzana", "Banano", "Lechuga", "Perejíl"];
 
-  arreglo1.forEach((item) => {
-    if (["Pera", "Limón"].includes(item)) frutas.push(item);
-    else verduras.push(item);
-  });
+let frutas = [];
+let verduras = [];
 
-  arreglo2.forEach((item) => {
-    if (["Manzana", "Banano"].includes(item)) frutas.push(item);
-    else verduras.push(item);
-  });
+arreglo1.forEach(item => {
+  if (item === "Pera" || item === "Limón") {
+    frutas.push(item);
+  } else {
+    verduras.push(item);
+  }
+});
 
-  console.log("Frutas:", frutas);
-  console.log("Verduras:", verduras);
-}
-ordenarFrutasVerduras();
+arreglo2.forEach(item => {
+  if (item === "Manzana" || item === "Banano") {
+    frutas.push(item);
+  } else {
+    verduras.push(item);
+  }
+});
+
+console.log("Frutas:", frutas);
+console.log("Verduras:", verduras);

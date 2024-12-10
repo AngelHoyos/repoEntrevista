@@ -1,8 +1,8 @@
-const suma = (a, b) => a + b;
-
-function resultado(a, b, callback) {
-    const resultado = callback(a,b);
-    console.log('el resultado de la suma es:', resultado);
-}
-
-resultado(5, 3, suma);
+function sumar(a, b, callback) {
+    const resultado = a + b;
+    callback(resultado);
+  }
+  
+  // Prueba
+  sumar(3, 4, (resultado) => console.log("Resultado de la suma:", resultado)); // Resultado de la suma: 7
+  

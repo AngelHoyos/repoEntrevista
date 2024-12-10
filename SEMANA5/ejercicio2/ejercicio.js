@@ -1,6 +1,5 @@
-// Ejercicio 2
 let objeto = {};
-objeto.nombre = "Juan";
-objeto.edad = 30;
-objeto.profesión = "Ingeniero";
+objeto.clave1 = "valor1";
+objeto.clave2 = "valor2";
+objeto.clave3 = "valor3";
 console.log(objeto);

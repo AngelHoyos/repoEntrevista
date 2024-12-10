@@ -1,16 +1,16 @@
-// Ejercicio 13
-const citas = {
-  12345: { nombre: "Juan", dia: "Lunes", hora: "10:00 AM" },
+let citas = {
+  "12345": { nombre: "Juan", cita: { dia: "Lunes", hora: "10:00" } },
+  "67890": { nombre: "Ana", cita: { dia: "Martes", hora: "12:00" } }
 };
-const documento = prompt("Ingrese su documento:");
-if (citas[documento]) {
-  console.log(
-    `Nombre: ${citas[documento].nombre}, Día: ${citas[documento].dia}, Hora: ${citas[documento].hora}`
-  );
-  const cambiar = confirm("¿Desea cambiar su cita?");
-  if (cambiar) {
-    citas[documento].dia = prompt("Ingrese el nuevo día:");
-    citas[documento].hora = prompt("Ingrese la nueva hora:");
-    console.log("Cita actualizada:", citas[documento]);
-  }
+
+let documento = prompt("Ingrese su documento:");
+let cita = citas[documento];
+alert(`Cita de ${cita.nombre}: ${cita.cita.dia} a las ${cita.cita.hora}`);
+let cambio = confirm("¿Desea cambiar su cita?");
+if (cambio) {
+  let nuevoDia = prompt("Ingrese el nuevo día:");
+  let nuevaHora = prompt("Ingrese la nueva hora:");
+  cita.cita.dia = nuevoDia;
+  cita.cita.hora = nuevaHora;
+  alert("Cambio realizado exitosamente");
 }

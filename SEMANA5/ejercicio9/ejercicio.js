@@ -1,14 +1,9 @@
-// Ejercicio 9
-const productosTienda = {
-  Papa: 1500,
-  Arroz: 2000,
-  Leche: 2500,
-  Azucar: 3000,
-  Cafe: 5000,
+let productos9 = {
+  "Leche": 100,
+  "Pan": 50,
+  "Queso": 200,
+  "Jamon": 300,
+  "Yogurt": 150
 };
-const productoBuscado = prompt("Ingrese el nombre del producto:");
-console.log(
-  `El precio de ${productoBuscado} es $${
-    productosTienda[productoBuscado] || "no disponible"
-  }`
-);
+let producto = prompt("Ingrese el nombre del producto:");
+alert(`El precio de ${producto} es $${productos9[producto]}`);

@@ -1,5 +1,5 @@
-function ordenarNumeros() {
-  let numeros = [9, 5, 7, 2];
-  console.log(numeros.sort((a, b) => a - b));
+function ordenarNumeros(arr) {
+  return arr.sort((a, b) => a - b); 
 }
-ordenarNumeros();
+
+console.log(ordenarNumeros([7, 2, 9, 1, 5])); 

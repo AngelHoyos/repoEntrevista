@@ -1,11 +1,15 @@
-// Ejercicio 10
-const usuariosNombres = {
+let usuarios10 = {
   12345: "Juan",
   67890: "Maria",
-  11223: "Pedro",
-  44556: "Ana",
-  77889: "Luis",
+  11121: "Carlos",
+  31415: "Ana",
+  16171: "Pedro",
+  22223: "Luis",
+  44445: "Sara",
+  55556: "Jose",
+  77777: "Eva",
+  88888: "David"
 };
-for (const id in usuariosNombres) {
-  console.log(usuariosNombres[id]);
+for (let documento in usuarios10) {
+  console.log(usuarios10[documento]);
 }

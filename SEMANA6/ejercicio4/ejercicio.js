@@ -1,5 +1,3 @@
-const nombres = ["Carlos", "Ana", "Beatriz", "David"];
-
-const nombresOrdenados = nombres.map((nombre) => nombre.toUpperCase()).sort();
-console.log(nombres);
-console.log(nombresOrdenados);
+let nombres = ["ana", "juan", "luisa"];
+let nombresMayusculas = nombres.map(nombre => nombre.toUpperCase()).sort();
+console.log(nombresMayusculas); // ["ANA", "JUAN", "LUISA"]

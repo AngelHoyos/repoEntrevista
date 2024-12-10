@@ -1,5 +1,5 @@
-function ordenarLetras() {
-  let letras = ["z", "a", "m", "b"];
-  console.log(letras.sort());
+function ordenarLetras(arr) {
+  return arr.sort(); // Ordena alfabéticamente
 }
-ordenarLetras();
+
+console.log(ordenarLetras(['d', 'a', 'b', 'c']));

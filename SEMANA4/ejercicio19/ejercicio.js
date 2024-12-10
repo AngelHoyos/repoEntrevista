@@ -1,11 +1,8 @@
-function sumaCuadrados() {
-  let arr19 = [-2, 8, 99, 1, 7];
-  let sumaCuadrados = 0;
+let arr = [-2, 8, 99, 1, 7];
+let suma = 0;
 
-  arr19.forEach((num) => {
-    sumaCuadrados += num ** 2;
-  });
+arr.forEach(num => {
+  suma += num * num; // Suma los cuadrados de cada número
+});
 
-  console.log("Suma de cuadrados:", sumaCuadrados);
-}
-sumaCuadrados();
+console.log(suma); // Muestra la suma de los cuadrados

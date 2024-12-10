@@ -1,16 +1,14 @@
-function cadenaConMasT() {
-  let adn = ["ATCG", "TTTT", "AGGT", "ACTT"];
-  let maxT = "";
-  let maxCount = 0;
-
-  adn.forEach((cadena) => {
-    let count = (cadena.match(/T/g) || []).length;
-    if (count > maxCount) {
-      maxT = cadena;
-      maxCount = count;
+function cadenaConMasTimina(arr) {
+  let maxT = 0;
+  let cadena = "";
+  arr.forEach(dna => {
+    let tCount = (dna.match(/T/g) || []).length; // Cuenta las T
+    if (tCount > maxT) {
+      maxT = tCount;
+      cadena = dna;
     }
   });
-
-  console.log("Mayor cadena con T:", maxT);
+  console.log(cadena); // Muestra la cadena con más T
 }
-cadenaConMasT();
+
+cadenaConMasTimina(["ATCG", "CGTA", "TATAT", "AGCT"]); // Llama a la función
